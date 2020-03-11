@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<title>Highest Scores</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+<style>
+    .center {
+        margin: auto;
+        margin-top: 15vh;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: "Raleway", sans-serif
+    }
+</style>
+
+    <!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+    <div class="w3-content" style="max-width:1400px">
+
+        <!-- Header -->
+        <header class="w3-container w3-center w3-padding-32">
+            <h1><b>Score</b></h1>
+        </header>
+
+        <hr>
+        <!-- Blog entry -->
+        <div class="w3-card-4 w3-margin w3-white" style="border-radius:10px; background-color: hsl(60, 59%, 86%);">
+            <div class="w3-container w3-center">
+                <h3><b>player name : </b> <span id ="current_player" class="w3-opacity"></span></h3>
+                <h3> player score: <span id ="current_score" class="w3-opacity"></span></h3>
+                <h3> player rank: <span id ="current_rank" class="w3-opacity"></span></h3>
+            </div>
+        </div>
+
+        <div class="w3-card-4 w3-margin w3-white" style="border-radius:10px; background-color: hsl(60, 59%, 86%);">
+            <div class="w3-container w3-center">
+                <h2><b>Hall of Fame</b></h2>
+                <h3> The 5 best players in the game are:</h3>
+            </div>
+            <div class="w3-container">
+                <table class="w3-table-all w3-large">
+                    <thead>
+                        <tr class="w3-light-grey w3-hover-black w3-">
+                            <th>
+                                <font size="3">Rank</font>
+                            </th>
+                            <th>
+                                <font size="3">Name</font>
+                            </th>
+                            <th>
+                                <font size="3">Score</font>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tr class="w3-hover-text-gray">
+                        <td>1</td>
+                        <td id="name_index_0">Amigo</td>
+                        <td id="score_index_0">505</td>
+                    </tr>
+                    <tr class="w3-hover-text-gray">
+                        <td>2</td>
+                        <td id="name_index_1">Tal</td>
+                        <td id="score_index_1">505</td>
+                    </tr>
+                    <tr class="w3-hover-text-gray">
+                        <td>3</td>
+                        <td id="name_index_2">Amit</td>
+                        <td id="score_index_2">505</td>
+                    </tr>
+                    <tr class="w3-hover-text-gray">
+                        <td>4</td>
+                        <td id="name_index_3">>Mor</td>
+                        <td id="score_index_3">505</td>
+                    </tr>
+                    <tr class="w3-hover-text-gray">
+                        <td>5</td>
+                        <td id="name_index_4">Mor</td>
+                        <td id="score_index_4">505</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-6">
+                <input type="button" id="PlayAgainButton" width="100" value="PLAY AGAIN!"/>
+				<input type="button" id="logout" width="100" value="LOGOUT"/>
+              </div>
+        </div>
+    </div>
+    <!-- <script>
+        // $.getJSON('/Users/eliavelmaliach/Documents/GitHub/Panther/public/scores.JSON', function (data) {
+        //     var scores = data.items.slice(",");
+        //     scores.sort((a, b) => (a.Score > b.Score) ? -1 : 1);
+        //     data.items = scores;
+        //     for (var i = 0; i < 5; i++) {
+        //         $('#name_index_' + i).html(data.items[i].Name)
+        //         $('#score_index_' + i).html(data.items[i].Score)
+        //         }
+        //     });
+    </script> -->
+</html>
